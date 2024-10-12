@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/new/prefix1"/>
+    <qresource prefix="/img">
+        <file>img/kartinki-ipoteka-26.jpg</file>
+    </qresource>
+</RCC>

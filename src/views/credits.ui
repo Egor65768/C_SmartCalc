@@ -1,0 +1,579 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Credits</class>
+ <widget class="QDialog" name="Credits">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>995</width>
+    <height>431</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"> background-color:rgb(76, 74, 78);</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>300</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+    color: #ffffff; /* Белый текст */
+    border: 1px solid #4a4a4a; /* Светло-серый бордер */
+    border-radius: 15px; /* Закругление углов */
+    padding: 10px;
+    font-size: 24px;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Кредитый калькулятор</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>50</y>
+     <width>125</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+    color: #ffffff; /* Белый текст */
+    border: 1px solid #4a4a4a; /* Светло-серый бордер */
+    border-radius: 2px; /* Закругление углов */
+    padding: 5px;
+    font-size: 15px;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Сумма кредита</string>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="doubleSpinBox_sum">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>80</y>
+     <width>251</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QDoubleSpinBox {
+    background-color: #8a8a8a; /* Темный фон дисплея */
+    color: #ffffff; /* Белый текст */
+    border: 1px solid #666666; /* Светло-серый бордер */
+    border-radius: 0px; /* Закругление углов */
+    padding: 5px;
+    font-size: 15px;
+}
+
+/* Стиль для стрелок */
+QDoubleSpinBox::up-button {
+    background-color: rgb(61, 56, 70); /* Цвет фона для кнопки вверх */
+   border: none; /* Без границы */
+}
+
+QDoubleSpinBox::down-button {
+    background-color: #666666; /* Цвет фона для кнопки вниз */
+  border: none; /* Без границы */
+}
+
+/* Цвет текста стрелок */
+QDoubleSpinBox::up-button:hover,
+QDoubleSpinBox::down-button:hover {
+    background-color: #ff8c00; /* Цвет фона при наведении */
+}
+
+QDoubleSpinBox::up-button:pressed,
+QDoubleSpinBox::down-button:pressed {
+    background-color: #ff4500; /* Цвет фона при нажатии */
+}
+</string>
+   </property>
+   <property name="minimum">
+    <double>1000.000000000000000</double>
+   </property>
+   <property name="maximum">
+    <double>10000000.000000000000000</double>
+   </property>
+   <property name="singleStep">
+    <double>10000.000000000000000</double>
+   </property>
+   <property name="value">
+    <double>100000.000000000000000</double>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>415</x>
+     <y>50</y>
+     <width>210</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+    color: #ffffff; /* Белый текст */
+    border: 1px solid #4a4a4a; /* Светло-серый бордер */
+    border-radius: 2px; /* Закругление углов */
+    padding: 5px;
+    font-size: 15px;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Годовая процентная ставка</string>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="doubleSpinBox_persent">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>80</y>
+     <width>201</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QDoubleSpinBox {
+    background-color: #8a8a8a; /* Темный фон дисплея */
+    color: #ffffff; /* Белый текст */
+    border: 1px solid #666666; /* Светло-серый бордер */
+    border-radius: 0px; /* Закругление углов */
+    padding: 5px;
+    font-size: 15px;
+}
+
+/* Стиль для стрелок */
+QDoubleSpinBox::up-button {
+    background-color: rgb(61, 56, 70); /* Цвет фона для кнопки вверх */
+   border: none; /* Без границы */
+}
+
+QDoubleSpinBox::down-button {
+    background-color: #666666; /* Цвет фона для кнопки вниз */
+  border: none; /* Без границы */
+}
+
+/* Цвет текста стрелок */
+QDoubleSpinBox::up-button:hover,
+QDoubleSpinBox::down-button:hover {
+    background-color: #ff8c00; /* Цвет фона при наведении */
+}
+
+QDoubleSpinBox::up-button:pressed,
+QDoubleSpinBox::down-button:pressed {
+    background-color: #ff4500; /* Цвет фона при нажатии */
+}
+</string>
+   </property>
+   <property name="minimum">
+    <double>0.100000000000000</double>
+   </property>
+   <property name="maximum">
+    <double>100.000000000000000</double>
+   </property>
+   <property name="value">
+    <double>15.000000000000000</double>
+   </property>
+  </widget>
+  <widget class="QDateEdit" name="dateEdit">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>80</y>
+     <width>141</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QDateEdit {
+    background-color: #8a8a8a; /* Темный фон дисплея */
+    color: #ffffff; /* Белый текст */
+    border: 1px solid t#666666; /* Светло-серый бордер */
+    border-radius: 0px; /* Закругление углов */
+    padding: 5px;
+    font-size: 15px;
+}
+
+/* Стиль для стрелок */
+QDateEdit::up-button {
+    background-color: rgb(61, 56, 70); /* Цвет фона для кнопки вверх */
+   border: none; /* Без границы */
+}
+
+QDateEdit::down-button {
+    background-color: #666666; /* Цвет фона для кнопки вниз */
+  border: none; /* Без границы */
+}
+
+/* Цвет текста стрелок */
+QDateEdit::up-button:hover,
+QDateEdit::down-button:hover {
+    background-color: #ff8c00; /* Цвет фона при наведении */
+}
+
+QDateEdit::up-button:pressed,
+QDateEdit::down-button:pressed {
+    background-color: #ff4500; /* Цвет фона при нажатии */
+}
+</string>
+   </property>
+   <property name="maximumDateTime">
+    <datetime>
+     <hour>14</hour>
+     <minute>59</minute>
+     <second>59</second>
+     <year>3000</year>
+     <month>12</month>
+     <day>31</day>
+    </datetime>
+   </property>
+   <property name="minimumDateTime">
+    <datetime>
+     <hour>15</hour>
+     <minute>0</minute>
+     <second>0</second>
+     <year>2024</year>
+     <month>2</month>
+     <day>21</day>
+    </datetime>
+   </property>
+   <property name="date">
+    <date>
+     <year>2024</year>
+     <month>2</month>
+     <day>22</day>
+    </date>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>50</y>
+     <width>127</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+    color: #ffffff; /* Белый текст */
+    border: 1px solid #4a4a4a; /* Светло-серый бордер */
+    border-radius: 2px; /* Закругление углов */
+    padding: 5px;
+    font-size: 15px;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Дата получения</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>115</y>
+     <width>211</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+    color: #ffffff; /* Белый текст */
+    border: 1px solid #4a4a4a; /* Светло-серый бордер */
+    border-radius: 2px; /* Закругление углов */
+    padding: 5px;
+    font-size: 15px;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Срок кредитования</string>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="spinBox">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>150</y>
+     <width>111</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QSpinBox {
+    background-color: #8a8a8a; /* Темный фон дисплея */
+    color: #ffffff; /* Белый текст */
+    border: 1px solid #666666; /* Светло-серый бордер */
+    border-radius: 0px; /* Закругление углов */
+    padding: 5px;
+    font-size: 15px;
+}
+
+/* Стиль для стрелок */
+QSpinBox::up-button {
+    background-color: rgb(61, 56, 70); /* Цвет фона для кнопки вверх */
+   border: none; /* Без границы */
+}
+
+QSpinBox::down-button {
+    background-color: #666666; /* Цвет фона для кнопки вниз */
+  border: none; /* Без границы */
+}
+
+/* Цвет текста стрелок */
+QSpinBox::up-button:hover,
+QSpinBox::down-button:hover {
+    background-color: #ff8c00; /* Цвет фона при наведении */
+}
+
+QSpinBox::up-button:pressed,
+QSpinBox::down-button:pressed {
+    background-color: #ff4500; /* Цвет фона при нажатии */
+}
+</string>
+   </property>
+   <property name="minimum">
+    <number>1</number>
+   </property>
+   <property name="maximum">
+    <number>100</number>
+   </property>
+   <property name="value">
+    <number>12</number>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_res">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>120</y>
+     <width>181</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    background-color:rgb(154, 153, 150); /* Основной цвет кнопки*/
+    color: #ffffff; /* Белый текст */
+    border: 1px solid #4a4a4a; /* Светло-серый бордер */
+    border-radius: 15px; /* Закругление углов */
+    padding: 10px;
+    font-size: 24px;
+}
+
+QPushButton:hover {
+    background-color:rgb(179, 179, 179); /* Светлее при наведении */
+}
+
+QPushButton:pressed {
+    background-color: rgb(26, 25, 25); /* Темнее при нажатии */
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Расчитать</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="tableWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>210</y>
+     <width>1001</width>
+     <height>221</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QTableWidget {
+    background-color: #f5f5f5; /* Светло-серый фон таблицы */
+    border: 1px solid #cccccc; /* Цвет границы таблицы */
+}
+
+QTableWidget::item {
+    padding: 10px; /* Отступы в ячейках */
+    border: 1px solid #dddddd; /* Цвет границы ячеек */
+    background-color: #ffffff; /* Белый фон ячеек */
+    color: #333333; /* Темно-серый цвет текста */
+}
+
+QTableWidget::item:selected {
+    background-color: #a0a0a0; /* Серый фон выделенной ячейки */
+    color: white; /* Белый цвет текста выделенной ячейки */
+}
+
+QHeaderView::section {
+    background-color: #999999; /* Серый фон заголовков */
+    color: white; /* Белый цвет текста заголовков */
+    padding: 5px; /* Отступы в заголовках */
+    border: 1px solid #cccccc; /* Цвет границы заголовков */
+}
+
+QTableWidget::horizontalHeader {
+    font-weight: bold; /* Жирный шрифт заголовков */
+    background-color: #777777; /* Темно-серый фон горизонтального заголовка */
+    color: white; /* Белый цвет текста горизонтального заголовка */
+}
+
+QTableWidget::verticalHeader {
+    background-color: #e0e0e0; /* Светло-серый фон вертикального заголовка */
+    color: #333333; /* Темно-серый цвет текста вертикального заголовка */
+}
+</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="image">
+   <property name="geometry">
+    <rect>
+     <x>630</x>
+     <y>0</y>
+     <width>361</width>
+     <height>201</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>kartinki-ipoteka-26.jpg</pixmap>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>140</y>
+     <width>81</width>
+     <height>70</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QRadioButton" name="radioButton_month">
+      <property name="styleSheet">
+       <string notr="true">QRadioButton {
+    color: #ffffff; /* Белый текст */
+    border: 1px solid #4a4a4a; /* Светло-серый бордер */
+    border-radius: 2px; /* Закругление углов */
+    padding: 4px;
+    font-size: 13px;
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Месяц</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QRadioButton" name="radioButton_year">
+      <property name="styleSheet">
+       <string notr="true">QRadioButton {
+    color: #ffffff; /* Белый текст */
+    border: 1px solid #4a4a4a; /* Светло-серый бордер */
+    border-radius: 2px; /* Закругление углов */
+    padding: 4px;
+    font-size: 13px;
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Год</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>110</y>
+     <width>191</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="0" column="0">
+     <widget class="QLabel" name="label_6">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+    color: #ffffff; /* Белый текст */
+    border: 1px solid #4a4a4a; /* Светло-серый бордер */
+    border-radius: 2px; /* Закругление углов */
+    padding: 5px;
+    font-size: 15px;
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Тип платежа</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QRadioButton" name="radioButton_dif">
+      <property name="styleSheet">
+       <string notr="true">QRadioButton {
+    color: #ffffff; /* Белый текст */
+    border: 1px solid #4a4a4a; /* Светло-серый бордер */
+    border-radius: 2px; /* Закругление углов */
+    padding: 4px;
+    font-size: 13px;
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Дифференцированные</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QRadioButton" name="radioButton_an">
+      <property name="styleSheet">
+       <string notr="true">QRadioButton {
+    color: #ffffff; /* Белый текст */
+    border: 1px solid #4a4a4a; /* Светло-серый бордер */
+    border-radius: 2px; /* Закругление углов */
+    padding: 4px;
+    font-size: 13px;
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Аннунитетный</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

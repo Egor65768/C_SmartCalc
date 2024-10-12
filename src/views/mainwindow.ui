@@ -1,0 +1,1278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>560</width>
+    <height>469</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">font: 500 11pt &quot;Ubuntu Sans&quot;;
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">background-color:rgb(76, 74, 78);
+font: 500 11pt &quot;Ubuntu Sans&quot;;</string>
+   </property>
+   <widget class="QPushButton" name="pushButton_1">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>145</y>
+      <width>70</width>
+      <height>70</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color:  rgb(61, 56, 70); /* Основной цвет кнопки*/
+    color: #ffffff; /* Белый текст */
+    border: 1px solid #4a4a4a; /* Светло-серый бордер */
+    border-radius: 35px; /* Закругление углов */
+    padding: 10px;
+    font-size: 24px;
+}
+
+QPushButton:hover {
+    background-color:rgb(118, 118, 118); /* Светлее при наведении */
+}
+
+QPushButton:pressed {
+    background-color: rgb(0, 0, 0); /* Темнее при нажатии */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>1</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>145</y>
+      <width>70</width>
+      <height>70</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color:  rgb(61, 56, 70); /* Основной цвет кнопки*/
+    color: #ffffff; /* Белый текст */
+    border: 1px solid #4a4a4a; /* Светло-серый бордер */
+    border-radius: 35px; /* Закругление углов */
+    padding: 10px;
+    font-size: 24px;
+}
+
+QPushButton:hover {
+    background-color:rgb(118, 118, 118); /* Светлее при наведении */
+}
+
+QPushButton:pressed {
+    background-color: rgb(0, 0, 0); /* Темнее при нажатии */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>2</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_3">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>145</y>
+      <width>70</width>
+      <height>70</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color:  rgb(61, 56, 70); /* Основной цвет кнопки*/
+    color: #ffffff; /* Белый текст */
+    border: 1px solid #4a4a4a; /* Светло-серый бордер */
+    border-radius: 35px; /* Закругление углов */
+    padding: 10px;
+    font-size: 24px;
+}
+
+QPushButton:hover {
+    background-color:rgb(118, 118, 118); /* Светлее при наведении */
+}
+
+QPushButton:pressed {
+    background-color: rgb(0, 0, 0); /* Темнее при нажатии */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>3</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_4">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>215</y>
+      <width>70</width>
+      <height>70</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color:  rgb(61, 56, 70); /* Основной цвет кнопки*/
+    color: #ffffff; /* Белый текст */
+    border: 1px solid #4a4a4a; /* Светло-серый бордер */
+    border-radius: 35px; /* Закругление углов */
+    padding: 10px;
+    font-size: 24px;
+}
+
+QPushButton:hover {
+    background-color:rgb(118, 118, 118); /* Светлее при наведении */
+}
+
+QPushButton:pressed {
+    background-color: rgb(0, 0, 0); /* Темнее при нажатии */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>4</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_5">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>215</y>
+      <width>70</width>
+      <height>70</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color:  rgb(61, 56, 70); /* Основной цвет кнопки*/
+    color: #ffffff; /* Белый текст */
+    border: 1px solid #4a4a4a; /* Светло-серый бордер */
+    border-radius: 35px; /* Закругление углов */
+    padding: 10px;
+    font-size: 24px;
+}
+
+QPushButton:hover {
+    background-color:rgb(118, 118, 118); /* Светлее при наведении */
+}
+
+QPushButton:pressed {
+    background-color: rgb(0, 0, 0); /* Темнее при нажатии */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>5</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_7">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>285</y>
+      <width>70</width>
+      <height>70</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color:  rgb(61, 56, 70); /* Основной цвет кнопки*/
+    color: #ffffff; /* Белый текст */
+    border: 1px solid #4a4a4a; /* Светло-серый бордер */
+    border-radius: 35px; /* Закругление углов */
+    padding: 10px;
+    font-size: 24px;
+}
+
+QPushButton:hover {
+    background-color:rgb(118, 118, 118); /* Светлее при наведении */
+}
+
+QPushButton:pressed {
+    background-color: rgb(0, 0, 0); /* Темнее при нажатии */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>7</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_6">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>215</y>
+      <width>70</width>
+      <height>70</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color:  rgb(61, 56, 70); /* Основной цвет кнопки*/
+    color: #ffffff; /* Белый текст */
+    border: 1px solid #4a4a4a; /* Светло-серый бордер */
+    border-radius: 35px; /* Закругление углов */
+    padding: 10px;
+    font-size: 24px;
+}
+
+QPushButton:hover {
+    background-color:rgb(118, 118, 118); /* Светлее при наведении */
+}
+
+QPushButton:pressed {
+    background-color: rgb(0, 0, 0); /* Темнее при нажатии */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>6</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_8">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>285</y>
+      <width>70</width>
+      <height>70</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color:  rgb(61, 56, 70); /* Основной цвет кнопки*/
+    color: #ffffff; /* Белый текст */
+    border: 1px solid #4a4a4a; /* Светло-серый бордер */
+    border-radius: 35px; /* Закругление углов */
+    padding: 10px;
+    font-size: 24px;
+}
+
+QPushButton:hover {
+    background-color:rgb(118, 118, 118); /* Светлее при наведении */
+}
+
+QPushButton:pressed {
+    background-color: rgb(0, 0, 0); /* Темнее при нажатии */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>8</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_point">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>355</y>
+      <width>70</width>
+      <height>70</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color:  rgb(61, 56, 70); /* Основной цвет кнопки*/
+    color: #ffffff; /* Белый текст */
+    border: 1px solid #4a4a4a; /* Светло-серый бордер */
+    border-radius: 35px; /* Закругление углов */
+    padding: 10px;
+    font-size: 24px;
+}
+
+QPushButton:hover {
+    background-color:rgb(118, 118, 118); /* Светлее при наведении */
+}
+
+QPushButton:pressed {
+    background-color: rgb(0, 0, 0); /* Темнее при нажатии */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>.</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_9">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>285</y>
+      <width>70</width>
+      <height>70</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color:  rgb(61, 56, 70); /* Основной цвет кнопки*/
+    color: #ffffff; /* Белый текст */
+    border: 1px solid #4a4a4a; /* Светло-серый бордер */
+    border-radius: 35px; /* Закругление углов */
+    padding: 10px;
+    font-size: 24px;
+}
+
+QPushButton:hover {
+    background-color:rgb(118, 118, 118); /* Светлее при наведении */
+}
+
+QPushButton:pressed {
+    background-color: rgb(0, 0, 0); /* Темнее при нажатии */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>9</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_0">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>355</y>
+      <width>70</width>
+      <height>70</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color:  rgb(61, 56, 70); /* Основной цвет кнопки*/
+    color: #ffffff; /* Белый текст */
+    border: 1px solid #4a4a4a; /* Светло-серый бордер */
+    border-radius: 35px; /* Закругление углов */
+    padding: 10px;
+    font-size: 24px;
+}
+
+QPushButton:hover {
+    background-color:rgb(118, 118, 118); /* Светлее при наведении */
+}
+
+QPushButton:pressed {
+    background-color: rgb(0, 0, 0); /* Темнее при нажатии */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_plus">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>145</y>
+      <width>70</width>
+      <height>70</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color:  rgb(61, 56, 70); /* Основной цвет кнопки*/
+    color: #ffffff; /* Белый текст */
+    border: 1px solid #4a4a4a; /* Светло-серый бордер */
+    border-radius: 35px; /* Закругление углов */
+    padding: 10px;
+    font-size: 24px;
+}
+
+QPushButton:hover {
+    background-color:rgb(118, 118, 118); /* Светлее при наведении */
+}
+
+QPushButton:pressed {
+    background-color: rgb(0, 0, 0); /* Темнее при нажатии */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>+</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_minus">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>215</y>
+      <width>70</width>
+      <height>70</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color:  rgb(61, 56, 70); /* Основной цвет кнопки*/
+    color: #ffffff; /* Белый текст */
+    border: 1px solid #4a4a4a; /* Светло-серый бордер */
+    border-radius: 35px; /* Закругление углов */
+    padding: 10px;
+    font-size: 24px;
+}
+
+QPushButton:hover {
+    background-color:rgb(118, 118, 118); /* Светлее при наведении */
+}
+
+QPushButton:pressed {
+    background-color: rgb(0, 0, 0); /* Темнее при нажатии */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>-</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_mul">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>285</y>
+      <width>70</width>
+      <height>70</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color:  rgb(61, 56, 70); /* Основной цвет кнопки*/
+    color: #ffffff; /* Белый текст */
+    border: 1px solid #4a4a4a; /* Светло-серый бордер */
+    border-radius: 35px; /* Закругление углов */
+    padding: 10px;
+    font-size: 24px;
+}
+
+QPushButton:hover {
+    background-color:rgb(118, 118, 118); /* Светлее при наведении */
+}
+
+QPushButton:pressed {
+    background-color: rgb(0, 0, 0); /* Темнее при нажатии */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>*</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_div">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>355</y>
+      <width>70</width>
+      <height>70</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color:  rgb(61, 56, 70); /* Основной цвет кнопки*/
+    color: #ffffff; /* Белый текст */
+    border: 1px solid #4a4a4a; /* Светло-серый бордер */
+    border-radius: 35px; /* Закругление углов */
+    padding: 10px;
+    font-size: 24px;
+}
+
+QPushButton:hover {
+    background-color:rgb(118, 118, 118); /* Светлее при наведении */
+}
+
+QPushButton:pressed {
+    background-color: rgb(0, 0, 0); /* Темнее при нажатии */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>/</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>75</y>
+      <width>421</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {
+    background-color: #8a8a8a; /* Темный фон дисплея */
+    color: #ffffff; /* Белый текст */
+    border: 1px solid #666666; /* Светло-серый бордер */
+	border-radius: 15px; /* Закругление углов */
+    padding: 10px;
+    font-size: 24px;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_AC">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>75</y>
+      <width>140</width>
+      <height>70</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color:  rgb(88, 89, 87); /* Основной цвет кнопки*/
+    color: rgb(224, 27, 36); /* Белый текст */
+    border: 1px solid #4a4a4a; /* Светло-серый бордер */
+    border-radius: 20px; /* Закругление углов */
+    padding: 10px;
+    font-size: 24px;
+}
+
+QPushButton:hover {
+    background-color:rgb(192, 191, 188); /* Светлее при наведении */
+}
+
+QPushButton:pressed {
+    background-color: rgb(0, 0, 0); /* Темнее при нажатии */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>AC</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_res">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>355</y>
+      <width>71</width>
+      <height>70</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color:  rgb(35, 132, 46); /* Основной цвет кнопки*/
+    color: #ffffff; /* Белый текст */
+    border: 1px solid #4a4a4a; /* Светло-серый бордер */
+    border-radius: 35px; /* Закругление углов */
+    padding: 10px;
+    font-size: 24px;
+}
+
+QPushButton:hover {
+    background-color:rgb(51, 209, 122); /* Светлее при наведении */
+}
+
+QPushButton:pressed {
+    background-color: rgb(143, 240, 164); /* Темнее при нажатии */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>=</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_open">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>145</y>
+      <width>70</width>
+      <height>70</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color:  rgb(88, 89, 87); /* Основной цвет кнопки*/
+    color: #ffffff; /* Белый текст */
+    border: 1px solid #4a4a4a; /* Светло-серый бордер */
+    border-radius: 20px; /* Закругление углов */
+    padding: 10px;
+    font-size: 24px;
+}
+
+QPushButton:hover {
+    background-color:rgb(192, 191, 188); /* Светлее при наведении */
+}
+
+QPushButton:pressed {
+    background-color: rgb(0, 0, 0); /* Темнее при нажатии */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>(</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_close">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>145</y>
+      <width>70</width>
+      <height>70</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color:  rgb(88, 89, 87); /* Основной цвет кнопки*/
+    color: #ffffff; /* Белый текст */
+    border: 1px solid #4a4a4a; /* Светло-серый бордер */
+    border-radius: 20px; /* Закругление углов */
+    padding: 10px;
+    font-size: 24px;
+}
+
+QPushButton:hover {
+    background-color:rgb(192, 191, 188); /* Светлее при наведении */
+}
+
+QPushButton:pressed {
+    background-color: rgb(0, 0, 0); /* Темнее при нажатии */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>)</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_pow">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>215</y>
+      <width>70</width>
+      <height>70</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color:  rgb(88, 89, 87); /* Основной цвет кнопки*/
+    color: #ffffff; /* Белый текст */
+    border: 1px solid #4a4a4a; /* Светло-серый бордер */
+    border-radius: 20px; /* Закругление углов */
+    padding: 10px;
+    font-size: 24px;
+}
+
+QPushButton:hover {
+    background-color:rgb(192, 191, 188); /* Светлее при наведении */
+}
+
+QPushButton:pressed {
+    background-color: rgb(0, 0, 0); /* Темнее при нажатии */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>^</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_mod">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>215</y>
+      <width>70</width>
+      <height>70</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color:  rgb(88, 89, 87); /* Основной цвет кнопки*/
+    color: #ffffff; /* Белый текст */
+    border: 1px solid #4a4a4a; /* Светло-серый бордер */
+    border-radius: 20px; /* Закругление углов */
+    padding: 10px;
+    font-size: 24px;
+}
+
+QPushButton:hover {
+    background-color:rgb(192, 191, 188); /* Светлее при наведении */
+}
+
+QPushButton:pressed {
+    background-color: rgb(0, 0, 0); /* Темнее при нажатии */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>mod</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_sin">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>285</y>
+      <width>70</width>
+      <height>70</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color:  rgb(88, 89, 87); /* Основной цвет кнопки*/
+    color: #ffffff; /* Белый текст */
+    border: 1px solid #4a4a4a; /* Светло-серый бордер */
+    border-radius: 20px; /* Закругление углов */
+    padding: 10px;
+    font-size: 24px;
+}
+
+QPushButton:hover {
+    background-color:rgb(192, 191, 188); /* Светлее при наведении */
+}
+
+QPushButton:pressed {
+    background-color: rgb(0, 0, 0); /* Темнее при нажатии */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>sin(</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_cos">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>355</y>
+      <width>70</width>
+      <height>70</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color:  rgb(88, 89, 87); /* Основной цвет кнопки*/
+    color: #ffffff; /* Белый текст */
+    border: 1px solid #4a4a4a; /* Светло-серый бордер */
+    border-radius: 20px; /* Закругление углов */
+    padding: 10px;
+    font-size: 24px;
+}
+
+QPushButton:hover {
+    background-color:rgb(192, 191, 188); /* Светлее при наведении */
+}
+
+QPushButton:pressed {
+    background-color: rgb(0, 0, 0); /* Темнее при нажатии */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>cos(</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_tan">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>285</y>
+      <width>70</width>
+      <height>70</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color:  rgb(88, 89, 87); /* Основной цвет кнопки*/
+    color: #ffffff; /* Белый текст */
+    border: 1px solid #4a4a4a; /* Светло-серый бордер */
+    border-radius: 20px; /* Закругление углов */
+    padding: 10px;
+    font-size: 24px;
+}
+
+QPushButton:hover {
+    background-color:rgb(192, 191, 188); /* Светлее при наведении */
+}
+
+QPushButton:pressed {
+    background-color: rgb(0, 0, 0); /* Темнее при нажатии */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>tan(</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_asin">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>355</y>
+      <width>70</width>
+      <height>70</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color:  rgb(88, 89, 87); /* Основной цвет кнопки*/
+    color: #ffffff; /* Белый текст */
+    border: 1px solid #4a4a4a; /* Светло-серый бордер */
+    border-radius: 20px; /* Закругление углов */
+    padding: 10px;
+    font-size: 24px;
+}
+
+QPushButton:hover {
+    background-color:rgb(192, 191, 188); /* Светлее при наведении */
+}
+
+QPushButton:pressed {
+    background-color: rgb(0, 0, 0); /* Темнее при нажатии */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>asin(</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_acos">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>355</y>
+      <width>70</width>
+      <height>70</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color:  rgb(88, 89, 87); /* Основной цвет кнопки*/
+    color: #ffffff; /* Белый текст */
+    border: 1px solid #4a4a4a; /* Светло-серый бордер */
+    border-radius: 20px; /* Закругление углов */
+    padding: 10px;
+    font-size: 24px;
+}
+
+QPushButton:hover {
+    background-color:rgb(192, 191, 188); /* Светлее при наведении */
+}
+
+QPushButton:pressed {
+    background-color: rgb(0, 0, 0); /* Темнее при нажатии */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>acos(</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_atan">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>285</y>
+      <width>70</width>
+      <height>70</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color:  rgb(88, 89, 87); /* Основной цвет кнопки*/
+    color: #ffffff; /* Белый текст */
+    border: 1px solid #4a4a4a; /* Светло-серый бордер */
+    border-radius: 20px; /* Закругление углов */
+    padding: 10px;
+    font-size: 24px;
+}
+
+QPushButton:hover {
+    background-color:rgb(192, 191, 188); /* Светлее при наведении */
+}
+
+QPushButton:pressed {
+    background-color: rgb(0, 0, 0); /* Темнее при нажатии */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>atan(</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_ln">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>215</y>
+      <width>70</width>
+      <height>70</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color:  rgb(88, 89, 87); /* Основной цвет кнопки*/
+    color: #ffffff; /* Белый текст */
+    border: 1px solid #4a4a4a; /* Светло-серый бордер */
+    border-radius: 20px; /* Закругление углов */
+    padding: 10px;
+    font-size: 24px;
+}
+
+QPushButton:hover {
+    background-color:rgb(192, 191, 188); /* Светлее при наведении */
+}
+
+QPushButton:pressed {
+    background-color: rgb(0, 0, 0); /* Темнее при нажатии */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>ln(</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_log">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>355</y>
+      <width>70</width>
+      <height>70</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color:  rgb(88, 89, 87); /* Основной цвет кнопки*/
+    color: #ffffff; /* Белый текст */
+    border: 1px solid #4a4a4a; /* Светло-серый бордер */
+    border-radius: 20px; /* Закругление углов */
+    padding: 10px;
+    font-size: 24px;
+}
+
+QPushButton:hover {
+    background-color:rgb(192, 191, 188); /* Светлее при наведении */
+}
+
+QPushButton:pressed {
+    background-color: rgb(0, 0, 0); /* Темнее при нажатии */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>log(</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_sqrt">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>285</y>
+      <width>70</width>
+      <height>70</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color:  rgb(88, 89, 87); /* Основной цвет кнопки*/
+    color: #ffffff; /* Белый текст */
+    border: 1px solid #4a4a4a; /* Светло-серый бордер */
+    border-radius: 20px; /* Закругление углов */
+    padding: 10px;
+    font-size: 24px;
+}
+
+QPushButton:hover {
+    background-color:rgb(192, 191, 188); /* Светлее при наведении */
+}
+
+QPushButton:pressed {
+    background-color: rgb(0, 0, 0); /* Темнее при нажатии */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>sqrt(</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_x">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>215</y>
+      <width>70</width>
+      <height>70</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color:  rgb(88, 89, 87); /* Основной цвет кнопки*/
+    color: #ffffff; /* Белый текст */
+    border: 1px solid #4a4a4a; /* Светло-серый бордер */
+    border-radius: 20px; /* Закругление углов */
+    padding: 10px;
+    font-size: 24px;
+}
+
+QPushButton:hover {
+    background-color:rgb(192, 191, 188); /* Светлее при наведении */
+}
+
+QPushButton:pressed {
+    background-color: rgb(0, 0, 0); /* Темнее при нажатии */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>x</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_minus_close">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>145</y>
+      <width>70</width>
+      <height>70</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color:  rgb(88, 89, 87); /* Основной цвет кнопки*/
+    color: #ffffff; /* Белый текст */
+    border: 1px solid #4a4a4a; /* Светло-серый бордер */
+    border-radius: 20px; /* Закругление углов */
+    padding: 10px;
+    font-size: 24px;
+}
+
+QPushButton:hover {
+    background-color:rgb(192, 191, 188); /* Светлее при наведении */
+}
+
+QPushButton:pressed {
+    background-color: rgb(0, 0, 0); /* Темнее при нажатии */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>-(</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_graf">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>425</y>
+      <width>280</width>
+      <height>45</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color:rgb(48, 46, 46); /* Основной цвет кнопки*/
+    color: #ffffff; /* Белый текст */
+    border: 1px solid #4a4a4a; /* Светло-серый бордер */
+    border-radius: 15px; /* Закругление углов */
+    padding: 10px;
+    font-size: 24px;
+}
+
+QPushButton:hover {
+    background-color:rgb(179, 179, 179); /* Светлее при наведении */
+}
+
+QPushButton:pressed {
+    background-color: rgb(26, 25, 25); /* Темнее при нажатии */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Построение графика</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_dellast">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>145</y>
+      <width>71</width>
+      <height>70</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color:  rgb(88, 89, 87); /* Основной цвет кнопки*/
+    color: #ffffff; /* Белый текст */
+    border: 1px solid #4a4a4a; /* Светло-серый бордер */
+    border-radius: 20px; /* Закругление углов */
+    padding: 10px;
+    font-size: 24px;
+}
+
+QPushButton:hover {
+    background-color:rgb(192, 191, 188); /* Светлее при наведении */
+}
+
+QPushButton:pressed {
+    background-color: rgb(0, 0, 0); /* Темнее при нажатии */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>&lt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>425</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+    background-color:  rgb(61, 56, 70); /* Основной цвет кнопки*/
+    color: #ffffff; /* Белый текст */
+    border: 1px solid #4a4a4a; /* Светло-серый бордер */
+    border-radius: 35px; /* Закругление углов */
+    padding: 10px;
+    font-size: 24px;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>       X:</string>
+    </property>
+   </widget>
+   <widget class="QDoubleSpinBox" name="doubleSpinBox">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>425</y>
+      <width>201</width>
+      <height>45</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QDoubleSpinBox {
+    background-color: #8a8a8a; /* Темный фон дисплея */
+    color: #ffffff; /* Белый текст */
+    border: 1px solid #666666; /* Светло-серый бордер */
+    border-radius: 0px; /* Закругление углов */
+    padding: 5px;
+    font-size: 15px;
+}
+
+/* Стиль для стрелок */
+QDoubleSpinBox::up-button {
+    background-color: rgb(61, 56, 70); /* Цвет фона для кнопки вверх */
+   border: none; /* Без границы */
+}
+
+QDoubleSpinBox::down-button {
+    background-color: #666666; /* Цвет фона для кнопки вниз */
+  border: none; /* Без границы */
+}
+
+/* Цвет текста стрелок */
+QDoubleSpinBox::up-button:hover,
+QDoubleSpinBox::down-button:hover {
+    background-color: #ff8c00; /* Цвет фона при наведении */
+}
+
+QDoubleSpinBox::up-button:pressed,
+QDoubleSpinBox::down-button:pressed {
+    background-color: #ff4500; /* Цвет фона при нажатии */
+}
+</string>
+    </property>
+    <property name="decimals">
+     <number>7</number>
+    </property>
+    <property name="minimum">
+     <double>-1000000.000000000000000</double>
+    </property>
+    <property name="maximum">
+     <double>1000000.000000000000000</double>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>282</width>
+      <height>75</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color:rgb(48, 46, 46); /* Основной цвет кнопки*/
+    color: #ffffff; /* Белый текст */
+    border: 1px solid #4a4a4a; /* Светло-серый бордер */
+    border-radius: 15px; /* Закругление углов */
+    padding: 10px;
+    font-size: 24px;
+}
+
+QPushButton:hover {
+    background-color:rgb(179, 179, 179); /* Светлее при наведении */
+}
+
+QPushButton:pressed {
+    background-color: rgb(26, 25, 25); /* Темнее при нажатии */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Кредитный </string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_10">
+    <property name="geometry">
+     <rect>
+      <x>282</x>
+      <y>0</y>
+      <width>278</width>
+      <height>75</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color:rgb(247, 130, 56); /* Оранжевый фон кнопок */
+    border: 1px solid #666666; /* Светло-серый бордер */
+    border-radius: 15px; /* Скругленные углы */
+    padding: 10px;
+    font-size:  24px;
+}
+QPushButton:hover {
+    background-color:rgb(249, 197, 122); /* Светлее при наведении */
+}
+
+QPushButton:pressed {
+    background-color: rgb(198, 70, 0); /* Темнее при нажатии */
+}</string>
+    </property>
+    <property name="text">
+     <string>Депозитный</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Graph</class>
+ <widget class="QDialog" name="Graph">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>409</width>
+    <height>558</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"> background-color:rgb(76, 74, 78);</string>
+  </property>
+  <widget class="QCustomPlot" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>411</width>
+     <height>301</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QCustomPlot {
+     background-color: rgb(94, 92, 100);
+ }
+QCPAxis {
+      border: 1px solid gray;
+    color: darkgray;
+}
+QCPAxis::tick {
+       color: gray;
+}
+QCPGrid {
+    gridline-color: lightgray;
+}</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>465</y>
+     <width>100</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+    color: #ffffff; /* Белый текст */
+    border: 1px solid #4a4a4a; /* Светло-серый бордер */
+    border-radius: 2px; /* Закругление углов */
+    padding: 5px;
+    font-size: 15px;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Функция: </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>360</y>
+     <width>50</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+    color: #ffffff; /* Белый текст */
+    border: 1px solid #4a4a4a; /* Светло-серый бордер */
+    border-radius: 2px; /* Закругление углов */
+    padding: 5px;
+    font-size: 15px;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>xmin</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>205</x>
+     <y>360</y>
+     <width>52</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+    color: #ffffff; /* Белый текст */
+    border: 1px solid #4a4a4a; /* Светло-серый бордер */
+    border-radius: 2px; /* Закругление углов */
+    padding: 5px;
+    font-size: 15px;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>ymin</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="line_step">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>440</y>
+     <width>171</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+    background-color: #8a8a8a; /* Темный фон дисплея */
+    color: #ffffff; /* Белый текст */
+    border: 1px solid #666666; /* Светло-серый бордер */
+	border-radius: 12px; /* Закругление углов */
+    padding: 5px;
+    font-size: 14px;
+}
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="doubleSpinBox_xmin">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>360</y>
+     <width>151</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QDoubleSpinBox {
+    background-color: #8a8a8a; /* Темный фон дисплея */
+    color: #ffffff; /* Белый текст */
+    border: 1px solid #666666; /* Светло-серый бордер */
+    border-radius: 0px; /* Закругление углов */
+    padding: 5px;
+    font-size: 15px;
+}
+
+/* Стиль для стрелок */
+QDoubleSpinBox::up-button {
+    background-color: rgb(61, 56, 70); /* Цвет фона для кнопки вверх */
+   border: none; /* Без границы */
+}
+
+QDoubleSpinBox::down-button {
+    background-color: #666666; /* Цвет фона для кнопки вниз */
+  border: none; /* Без границы */
+}
+
+/* Цвет текста стрелок */
+QDoubleSpinBox::up-button:hover,
+QDoubleSpinBox::down-button:hover {
+    background-color: #ff8c00; /* Цвет фона при наведении */
+}
+
+QDoubleSpinBox::up-button:pressed,
+QDoubleSpinBox::down-button:pressed {
+    background-color: #ff4500; /* Цвет фона при нажатии */
+}
+</string>
+   </property>
+   <property name="minimum">
+    <double>-100000.000000000000000</double>
+   </property>
+   <property name="maximum">
+    <double>100000.000000000000000</double>
+   </property>
+   <property name="value">
+    <double>-25.000000000000000</double>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="doubleSpinBox_ymin">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>360</y>
+     <width>151</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QDoubleSpinBox {
+    background-color: #8a8a8a; /* Темный фон дисплея */
+    color: #ffffff; /* Белый текст */
+    border: 1px solid #666666; /* Светло-серый бордер */
+    border-radius: 0px; /* Закругление углов */
+    padding: 5px;
+    font-size: 15px;
+}
+
+/* Стиль для стрелок */
+QDoubleSpinBox::up-button {
+    background-color: rgb(61, 56, 70); /* Цвет фона для кнопки вверх */
+   border: none; /* Без границы */
+}
+
+QDoubleSpinBox::down-button {
+    background-color: #666666; /* Цвет фона для кнопки вниз */
+  border: none; /* Без границы */
+}
+
+/* Цвет текста стрелок */
+QDoubleSpinBox::up-button:hover,
+QDoubleSpinBox::down-button:hover {
+    background-color: #ff8c00; /* Цвет фона при наведении */
+}
+
+QDoubleSpinBox::up-button:pressed,
+QDoubleSpinBox::down-button:pressed {
+    background-color: #ff4500; /* Цвет фона при нажатии */
+}
+</string>
+   </property>
+   <property name="minimum">
+    <double>-100000.000000000000000</double>
+   </property>
+   <property name="maximum">
+    <double>100000.000000000000000</double>
+   </property>
+   <property name="value">
+    <double>-25.000000000000000</double>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="doubleSpinBox_xmax">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>400</y>
+     <width>151</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QDoubleSpinBox {
+    background-color: #8a8a8a; /* Темный фон дисплея */
+    color: #ffffff; /* Белый текст */
+    border: 1px solid #666666; /* Светло-серый бордер */
+    border-radius: 0px; /* Закругление углов */
+    padding: 5px;
+    font-size: 15px;
+}
+
+/* Стиль для стрелок */
+QDoubleSpinBox::up-button {
+    background-color: rgb(61, 56, 70); /* Цвет фона для кнопки вверх */
+   border: none; /* Без границы */
+}
+
+QDoubleSpinBox::down-button {
+    background-color: #666666; /* Цвет фона для кнопки вниз */
+  border: none; /* Без границы */
+}
+
+/* Цвет текста стрелок */
+QDoubleSpinBox::up-button:hover,
+QDoubleSpinBox::down-button:hover {
+    background-color: #ff8c00; /* Цвет фона при наведении */
+}
+
+QDoubleSpinBox::up-button:pressed,
+QDoubleSpinBox::down-button:pressed {
+    background-color: #ff4500; /* Цвет фона при нажатии */
+}
+</string>
+   </property>
+   <property name="minimum">
+    <double>-100000.000000000000000</double>
+   </property>
+   <property name="maximum">
+    <double>100000.000000000000000</double>
+   </property>
+   <property name="value">
+    <double>25.000000000000000</double>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="doubleSpinBox_ymax">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>400</y>
+     <width>151</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QDoubleSpinBox {
+    background-color: #8a8a8a; /* Темный фон дисплея */
+    color: #ffffff; /* Белый текст */
+    border: 1px solid #666666; /* Светло-серый бордер */
+    border-radius: 0px; /* Закругление углов */
+    padding: 5px;
+    font-size: 15px;
+}
+
+/* Стиль для стрелок */
+QDoubleSpinBox::up-button {
+    background-color: rgb(61, 56, 70); /* Цвет фона для кнопки вверх */
+   border: none; /* Без границы */
+}
+
+QDoubleSpinBox::down-button {
+    background-color: #666666; /* Цвет фона для кнопки вниз */
+  border: none; /* Без границы */
+}
+
+/* Цвет текста стрелок */
+QDoubleSpinBox::up-button:hover,
+QDoubleSpinBox::down-button:hover {
+    background-color: #ff8c00; /* Цвет фона при наведении */
+}
+
+QDoubleSpinBox::up-button:pressed,
+QDoubleSpinBox::down-button:pressed {
+    background-color: #ff4500; /* Цвет фона при нажатии */
+}
+</string>
+   </property>
+   <property name="minimum">
+    <double>-100000.000000000000000</double>
+   </property>
+   <property name="maximum">
+    <double>100000.000000000000000</double>
+   </property>
+   <property name="value">
+    <double>25.000000000000000</double>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>400</y>
+     <width>50</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+    color: #ffffff; /* Белый текст */
+    border: 1px solid #4a4a4a; /* Светло-серый бордер */
+    border-radius: 2px; /* Закругление углов */
+    padding: 5px;
+    font-size: 15px;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>xmax</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>205</x>
+     <y>400</y>
+     <width>52</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+    color: #ffffff; /* Белый текст */
+    border: 1px solid #4a4a4a; /* Светло-серый бордер */
+    border-radius: 2px; /* Закругление углов */
+    padding: 5px;
+    font-size: 15px;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>ymax</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>440</y>
+     <width>55</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+    color: #ffffff; /* Белый текст */
+    border: 1px solid #4a4a4a; /* Светло-серый бордер */
+    border-radius: 2px; /* Закругление углов */
+    padding: 5px;
+    font-size: 15px;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>xstep</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>304</y>
+     <width>411</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    background-color:rgb(48, 46, 46); /* Основной цвет кнопки*/
+    color: #ffffff; /* Белый текст */
+    border: 1px solid #4a4a4a; /* Светло-серый бордер */
+    border-radius: 15px; /* Закругление углов */
+    padding: 10px;
+    font-size: 24px;
+}
+
+QPushButton:hover {
+    background-color:rgb(179, 179, 179); /* Светлее при наведении */
+}
+
+QPushButton:pressed {
+    background-color: rgb(26, 25, 25); /* Темнее при нажатии */
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Построить график</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="line_func">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>487</y>
+     <width>411</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+    background-color: #8a8a8a; /* Темный фон дисплея */
+    color: #ffffff; /* Белый текст */
+    border: 1px solid #666666; /* Светло-серый бордер */
+	border-radius: 15px; /* Закругление углов */
+    padding: 10px;
+    font-size: 24px;
+}
+</string>
+   </property>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QCustomPlot</class>
+   <extends>QWidget</extends>
+   <header>qcustomplot.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
