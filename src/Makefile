@@ -13,7 +13,7 @@ ifeq ($(UNAME_S), Linux)
 	LINK_FLAGS += -lm -lsubunit
 endif
 
-all: clean test gcov_report install
+all: gcov_report install
 
 test: clean
 	$(CC) $(LEAKS) $(MATRIX) ${TEST_LIB} ${LINK_FLAGS} -o test
@@ -30,7 +30,7 @@ endif
 clean: 
 	rm -fr *.o *.a *.gch *.gcno *.gcda gcov_test s21_test.info ./report test
 
-rebuild: clean test 
+rebuild: uninstall install 
 
 style:
 	clang-format -style=google -n tests/* ./*.c ./*.h ./views/*.cpp ./views/*.h
@@ -66,7 +66,7 @@ dist:
 	cp -R ../build/$(NAMEAPP).app ../dist
 	cp ../README_RUS.md ../dist && cp ../README.md ../dist
 	cd ../dist && tar cvzf $(NAMEAPP)_v1.0.tgz *
-	cd ../dist && rm -rf $(NAMEAPP).app README.md README_RUS.md
+	cd ../dist && rm -rf $(NAMEAPP).app README.md
 	echo "The build was successfully archived"
 
 dvi:
